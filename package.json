@@ -1,0 +1,8 @@
+{
+  "name": "barbershop_adaptive",
+  "version": "6.9.4",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}

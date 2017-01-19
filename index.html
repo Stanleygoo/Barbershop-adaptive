@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="page-header">
+        <!--<h1 class="visualyy-hidden">
+            Барбершоп "Бородинский" - истинно мужская классика
+        </h1>-->
+        <div class="page-header__logo">
+            <img src="img/logo.svg" alt="Барбершоп Бородинский" width="370" height="151">
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toogle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+                    <li class="main-nav__item"><a href="#">Наши работы</a></li>
+                    <li class="main-nav__item"><a href="#">Записаться</a></li>
+                    <li class="main-nav__item"><a href="#">Контакты</a></li>
+                    <li class="main-nav__item"><a href="#">Html Academy</a></li>
+                </ul>
+                <ul class="main-nav__user-list">
+                    <li class="main-nav__user-item"><a href="#" class="main-nav__user-login" title="Войти">Вход</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="stats">
+        <header class="stats__header">
+            <!--<h2 class="stats__title visually-hidden">Статистика Барбершопа</h2>-->
+            <b class="stats__slogan">Стрижка у нас<br> это выгодно</b>
+            <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+            <!--<small class="stats__legend stats__legend--top"><sup>*</sup> - приведенные данные ложь</small>-->
+        </header>
+        <table class="stats__items">
+            <tr>
+                <td class="stats__value">1500<sup>*</sup></td>
+                <td class="stats__field">рублей<br> вложений</td>
+            </tr>
+            <tr>
+                <td class="stats__value">7200</td>
+                <td class="stats__field">секунд<br> времени мастера</td>
+            </tr>
+            <tr>
+                <td class="stats__value">90000</td>
+                <td class="stats__field">постриженных<br> волос</td>
+            </tr>
+            <tr>
+                <td class="stats__value">500000<sup>*</sup></td>
+                <td class="stats__field">лайков и<br> комплиментов</td>
+            </tr>
+        </table>
+        <small class="stats__legend stats__legend--bottom"><sup>*</sup> - приведенные данные ложь</small>
+    </section>
+    <section class="advantages">
+        <div class="advantages__wrapper slider">
+            <h2 class="advantages__title visually-hidden">Наши преимущества</h2>
+            <input type="radio" name="advantages" id="advantages-input-1" checked class="slider__input">
+            <input type="radio" name="advantages" id="advantages-input-2" class="slider__input">
+            <input type="radio" name="advantages" id="advantages-input-3" class="slider__input">
+            <ul class="advantages--items">
+                <li class="advantages__item advantages__item--fast slider__item">
+                    <h3 class="advantages__item-title">Быстро</h3>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+                </li>
+                <!--<li class="advantages__item advantages__item--fast slider__item">
+                    <h3 class="advantages__item-title">Круто</h3>
+                    <p>Забудьте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+                </li>
+                <li class="advantages__item advantages__item--fast slider__item">
+                    <h3 class="advantages__item-title">Дорого</h3>
+                    <p>Наши мастера - профессионалы своего дела не могут стоить дешево. К тому же, разве цена не даёт определённый статус?</p>
+                </li>-->
+            </ul>
+            <div class="advantages__toggles slider__toggles">
+               <label for="advantages-input-1" class="slider__toggle"></label> 
+               <label for="advantages-input-2" class="slider__toggle"></label> 
+               <label for="advantages-input-3" class="slider__toggle"></label> 
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news__wrapper">
+            <h2 class="news__title">Новости и акции</h2>
+            <ul class="news__items">
+                <li class="news__item">
+                    <time class="news__date" datetime="2017-01-12"><b>12</b> Янв</time>
+                    <p>Нам наконец завезли<br> Ягермайстер! Теперь вы можете<br> пропусить стаканчик во время<br> стрижки.</p>
+                </li>
+                <li class="news__item">
+                    <time class="news__date" datetime="2017-01-5"><b>12</b> Янв</time>
+                    <p>В нашей команде пополнение,<br> Борис «Бритва» Стригунец,<br> обладатель множества титулов и<br> наград пополнил наши стройные<br> ряды. Спешите записаться!</p>
+                </li>
+            </ul>
+            <a href="" class="news__to-all btn">Показать все</a>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__wrapper slider">
+            <h2 class="rewiews__title">Отзывы о нас</h2>
+            <!--<a href="#" class="reviews__write btn">Оставить свой</a>-->
+            <input type="radio" class="slider__input" name="reviews-input-1" checked>
+            <div class="reviews__items">
+                <blockquote class="reviews__item slider__item">
+                    <div class="reviews__author-foto">
+                        <img src="" alt="Фото Трэвиса Баркера" width="50" height="33">
+                    </div>
+                    <cite class="rewviews__author-name">Трэвис Баркер</cite>
+                    <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, что бы было видно новую татуировку</p>
+                </blockquote>
+               <!-- <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__next" type="button">Следующий отзыв</button>-->
+            </div>
+            <div class="preview__toggles slider__toggles"></div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <p class="page-footer__contacts">
+                <b>Барбершоп "Бородинский"</b><br>
+                г. Санкт-Петербург, ул. большая Конюшенная 19/8 <br>
+                <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>+7(812)555-66-66</a>
+            </p>
+            <p class="page-footer__social">
+                <span class="social-links">
+                    <a href="https://vk.com/htmlacademy" class="social-link social-link--vk">Мы в Вконтакте</a>
+                    <a href="https://vk.com/htmlacademy" class="social-link social-link--fb">Мы в Фэйсбуке</a>
+                    <a href="https://vk.com/htmlacademy" class="social-link social-link--in">Мы в Инстаграм</a>
+                </span>
+            </p>
+            <p class="page-footer__copyright">Разработано:
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="btn page-footer__copyright-link">HTML Academy</a>
+            </p>
+        </div>
+    </footer>
+    <!--
+    <div class="popup-login">
+        <b class="popup-title">Личный кабинет</b>
+        <p class="popup-text">Введите свой логин и пароль, чтобы войти</p>
+        <form action="#" class="login-form" method="post">
+           <label>
+               <input type="text" value="Логин" name="login">
+           </label>
+           <label>
+               <input type="password" value="Пароль" name="password">
+           </label>
+            <input type="chechbox">
+            <label>Запомните меня</label>
+            <a href="#">Я забыл пароль!</a> 
+        </form>
+        <input type="submit" value="Войти">
+        <input type="submit" value="Закрыть">
+     </div>
+     -->
+</body>
+</html>

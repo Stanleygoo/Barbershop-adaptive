@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+       <header class="page-header">
+        <div class="page-header__logo">
+            <img src="img/logo.svg" alt="Барбершоп Бородинский" width="370" height="153">
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toogle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item main-nav__item--active"><a>Записаться</a></li>
+                    <li class="main-nav__item"><a href="#">Главная</a></li>
+                    <li class="main-nav__item"><a href="#">Наши работы</a></li>
+                    <li class="main-nav__item"><a href="#">Контакты</a></li>
+                    <li class="main-nav__item"><a href="#">Html Academy</a></li>
+                </ul>
+                <ul class="main-nav__user-list">
+                    <li class="main-nav__user-item"><a href="#" class="main-nav__user-login" title="Войти">Вход</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <form action="#" class="form" method="post">
+        <!--<a href="index.html">На главную</a>-->
+        <h1 class="form__title">Запись на стрижку</h1>
+        <input type="text" value="Фамилия" name="firstname">
+        <input type="text" value="Имя" name="name">
+        <input type="text" value="Отчество" name="twoname">
+        <input type="tel" value="Контактный телефон" name="telephone">
+        <input type="email" value="Контактный e-mail" name="email">
+        <textarea name="info" placeholder="Доп. информация для мастера"></textarea>
+        <h2 class="form-model">Выберите модель бороды</h2>
+        <label><input type="radio" name="model-1">адмирал</label>
+        <label><input type="radio" name="model-2">лесоруб</label>
+        <label><input type="radio" name="model-3">полярник</label>
+        <label><input type="radio" name="model-4">боярин</label>
+        <label><input type="radio" name="model-5">мудрец</label>
+        <label><input type="checkbox" checked>Подкрасить бороду</label>
+        <label><input type="checkbox" checked>Накрутить усы</label>
+        <label><input type="checkbox">Причесать бороду</label>
+        <label><input type="checkbox">Подровнять виски</label>
+        <label><input type="checkbox">Убрать седину</label>
+        <label><input type="checkbox">Отполировать лысину</label>
+    </form>
+    <button class="btn">Отправить заявку</button>
+     <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <p class="page-footer__contacts">
+                <b>Барбершоп "Бородинский"</b><br>
+                г. Санкт-Петербург, ул. большая Конюшенная 19/8 <br>
+                <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>+7(812)555-66-66</a>
+            </p>
+            <p class="page-footer__social">
+                <span class="social-links">
+                    <a href="https://vk.com/htmlacademy" class="social-link social-link--vk">Мы в Вконтакте</a>
+                    <a href="https://vk.com/htmlacademy" class="social-link social-link--fb">Мы в Фэйсбуке</a>
+                    <a href="https://vk.com/htmlacademy" class="social-link social-link--in">Мы в Инстаграм</a>
+                </span>
+            </p>
+            <p class="page-footer__copyright">Разработано:
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="btn page-footer__copyright-link">HTML Academy</a>
+            </p>
+        </div>
+    </footer>
+    <div class="popup-failure">
+        <b class="failure__title">Неудача</b>
+        <p class="failure__content">
+            Что-то пошло не так. Проверьте выделенные красным поля формы.
+        </p>
+        <button class="btn">Ок</button>
+    </div>
+    <div class="popup-success">
+        <b class="success__title">Неудача</b>
+        <p class="success__content">
+            Что-то пошло не так. Проверьте выделенные красным поля формы.
+        </p>
+        <button class="btn">Закрыть окно</button>
+    </div>
+</body>
